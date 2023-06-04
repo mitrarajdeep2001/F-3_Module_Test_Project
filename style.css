@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/space_image.jpg");
+}
+
+.main-container{
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    height: 95vh;
+    padding: 10px;
+}
+
+.left-container{
+    width: 76%;
+    border: 4px solid #161616;
+    border-radius: 10px;
+    position: relative;
+    overflow-y: auto;
+    background-color: #161616;
+}
+
+#current-image-container h1{
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    color: gold;
+    background-color: #161616;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 20px;
+}
+
+#info img{
+    width: 100%;
+    height: 460px;
+    margin-block: 10px;
+    border-radius: 20px;
+    border: 5px solid orangered;
+}
+
+#info h2{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: tomato;
+}
+
+#info p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    color: aqua;
+}
+
+.right-container{
+    width: calc(100% - 76%);
+}
+
+#search-history{
+    border: 4px solid #161616;
+    border-radius: 10px;
+    height: 90%;
+    overflow-y: auto;
+    background-color: #161616;
+}
+
+#search-history h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-block: 20px;
+    color: orangered;
+}
+
+#search-history ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: url("../images/list_icon.png");
+}
+
+#search-history li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    color: greenyellow;
+}
+
+#search-form{
+    height: calc(100% - 90%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+#search-form #search-input, #search-form input[type=button]{
+    border: 4px solid orangered;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: gold;
+    background-color: #161616;
+    outline: none;
+    cursor: pointer;
+}
+
+#search-input::-webkit-calendar-picker-indicator{
+    color: #ffffff;
+    padding: 0;
+    cursor: pointer;
+    filter: invert(100%)
+}
+
+.left-container::-webkit-scrollbar, #search-history::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 20px;
+    background-color: aqua;
+    padding-block: 10px;
+}
+
+.left-container::-webkit-scrollbar-thumb, #search-history::-webkit-scrollbar-thumb{
+    height: 10px;
+    border-radius: 5px;
+    background-color: orangered;
+}
