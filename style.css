@@ -11,7 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../images/space_image.jpg");
+    background-image: url("space_image.jpg");
 }
 
 .main-container{
@@ -96,7 +96,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    list-style: url("../images/list_icon.png");
+    list-style: url("list_icon.png");
 }
 
 #search-history li{
